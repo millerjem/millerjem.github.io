@@ -7,9 +7,8 @@ title: Getting Set Up
 
 The instructor will give you the IP address and credentials that you will need to SSH into your DC/OS cluster.
 
-## Set Up DC/OS Command Line
-
 ### Step 1
+Set Up DC/OS Command Line
 
 If you have a Macbook or Linux laptop and you don't have any restrictions on accessing servers on the internet, you can use the instructions in Step 2 on your laptop. If you don't then you should login to your cluster's "bootstrap" server and use it as a command line client.
 

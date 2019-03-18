@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Deploying Another Kubernetes Cluster - DC/OS Days</title>
+  <link rel="stylesheet" href="http://localhost:4000/assets/css/just-the-docs.css">
+
+  
+
+  
+    <script type="text/javascript" src="http://localhost:4000/assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="http://localhost:4000/assets/js/just-the-docs.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar">
+      <a href="http://localhost:4000" class="site-title fs-6 lh-tight">DC/OS Days</a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/404.html" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/getting%20setup.html" class="navigation-list-link">Getting Set Up</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/" class="navigation-list-link"></a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="http://localhost:4000/labs/kubernetes%20lab/kubernetes%20lab.html" class="navigation-list-link">Kubernetes Lab</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/labs/kubernetes%20lab/launch.html" class="navigation-list-link">Launch a Kubernetes Cluster</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/labs/kubernetes%20lab/connecting.html" class="navigation-list-link">Connecting to a Kubernetes Cluster</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="http://localhost:4000/labs/kubernetes%20lab/deploy.html" class="navigation-list-link active">Deploying Another Kubernetes Cluster</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="http://localhost:4000/labs/kubernetes%20lab/scaling.html" class="navigation-list-link">Scaling a Kubernetes Cluster</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/labs/data%20services%20lab/data%20services%20lab.html" class="navigation-list-link">Data Services Lab</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/labs/monitoring/monitoring%20lab.html" class="navigation-list-link">Monitoring Lab</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/labs/cicd%20lab/cicd%20lab.html" class="navigation-list-link">CICD Lab</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="http://localhost:4000/labs/cassandra%20lab/cassandra%20lab.html" class="navigation-list-link">Cassandra Lab</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search DC/OS Days" aria-label="Search DC/OS Days" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="//github.com/millerjem/dcos-days">Source</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="http://localhost:4000/labs/kubernetes%20lab/kubernetes%20lab.html">Kubernetes Lab</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Deploying Another Kubernetes Cluster</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="launch-a-second-kubernetes-cluster">Launch a second Kubernetes cluster</h1>
+
+<p>In this lab, you will launch a second Kubernetes cluster on the same DC/OS cluster, demonstrating Mesosphere Kubernetes Engine’s ability to run high-density, multi-kubernetes environments.</p>
+
+<h3 id="step-1">Step 1</h3>
+<p>Create SSL keys, Service Account, and Secret for Kubernetes Cluster 2</p>
+
+<p>Run the commands below to create the SSL keys, service account, and secret for your second Kubernetes cluster.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dcos security org service-accounts keypair private-key.pem public-key.pem
+dcos security org service-accounts create -p public-key.pem -d "Kubernetes cluster 2 service account" kubernetes-cluster2
+dcos security secrets create-sa-secret private-key.pem kubernetes-cluster2 kubernetes-cluster2/sa
+</code></pre></div></div>
+
+<h3 id="step-2">Step 2</h3>
+<p>Add permissions</p>
+
+<p>Run the commands below to grant the service account permissions to create and view Kubernetes clusters.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dcos security org groups add_user superusers kubernetes-cluster2
+</code></pre></div></div>
+
+<h3 id="step-3">Step 3</h3>
+<p>Launch the second Kubernetes cluster</p>
+
+<p>Now, we will launch a Kubernetes cluster using the service account and secret we just created. Copy and paste the command below into your terminal to create a package installer options file that references the service account and secret we just created.</p>
+
+<p><strong>Be sure to copy and paste the entire code snippet below (including the final line containing <code class="highlighter-rouge">EOF</code>)</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cat &gt; cluster2-options.json &lt;&lt; EOF
+{
+  "service": {
+    "name": "kubernetes-cluster2",
+    "service_account": "kubernetes-cluster2",
+    "service_account_secret": "kubernetes-cluster2/sa"
+  },
+  "kubernetes": {
+    "private_node_count": 2
+  }
+}
+EOF
+</code></pre></div></div>
+
+<p>Then run the DC/OS Kubernetes CLI command to launch the Kubernetes cluster.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dcos kubernetes cluster create --options=cluster2-options.json --yes
+</code></pre></div></div>
+
+<p>Your new Kubernetes cluster will take a few minutes to spin up. You can see the installation runbook automation and monitor the status of installation of each component with the command below:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>watch dcos kubernetes manager plan status deploy --name=kubernetes-cluster2
+</code></pre></div></div>
+
+<p>When all the Kubernetes cluster elements report a status of <code class="highlighter-rouge">COMPLETE</code>, your new cluster is ready.</p>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

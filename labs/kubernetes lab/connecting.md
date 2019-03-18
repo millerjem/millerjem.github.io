@@ -5,7 +5,7 @@ title: Connecting to a Kubernetes Cluster
 nav_order: 1
 ---
 
-# Lab 2 - Connecting kubectl to DC/OS
+# Connecting kubectl to DC/OS
 
 ### Step 1
 Find public IP address of Public DC/OS Node

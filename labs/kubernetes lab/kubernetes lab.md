@@ -5,5 +5,5 @@ nav_order: 0
 has_children: true
 ---
 
-# Kubernete Lab
+# Kubernetes Lab
 This lab shows you how to deploy a kubernetes cluster in DC/OS

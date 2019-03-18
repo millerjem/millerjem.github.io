@@ -1,0 +1,79 @@
+- name: cluster-01
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-02
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-03
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-04
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-05
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-06
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-07
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-08
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-09
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-10
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-11
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-12
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-13
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-14
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-15
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-16
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-17
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-18
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-19
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.
+
+- name: cluster-20
+  username: usaf
+  password: $6$rounds=656000$2xcwjS8axDU37lLS$273P/MXIBNOvSrf230E5jhrywP.yGvpjbSHomNHWEkLlgYSx9MnxZ4JZpAvkTH0Wo7nv5tz0k9DuL29SwTxje.

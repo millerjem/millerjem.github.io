@@ -27,7 +27,7 @@ github_username:  millerjem
 # Build settings
 markdown: kramdown
 remote_theme: just-the-docs
-theme: just-the-docs
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 

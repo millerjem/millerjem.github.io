@@ -46,7 +46,7 @@ plugins:
 search_enabled: true
 aux_links:
     "Source":
-    - "//github.com/millerjem/dcos-days"
+    - "//github.com/millerjem/millerjem.github.io"
 nav_order:
     layout: default
     title: Testing

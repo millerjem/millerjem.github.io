@@ -1,0 +1,20 @@
+{
+    "id": "/cqlsh",
+    "instances": 1,
+    "portDefinitions": [],
+    "container": {
+      "type": "MESOS",
+      "volumes": [],
+      "docker": {
+        "image": "cassandra"
+      }
+    },
+    "cpus": 0.1,
+    "mem": 128,
+    "requirePorts": false,
+    "networks": [],
+    "healthChecks": [],
+    "fetch": [],
+    "constraints": [],
+    "cmd": "while :; do sleep 1; done"
+  }
